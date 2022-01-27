@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Parallax website</title>
+	<style type="text/css">
+     body,html{
+     	height: 100%;
+     	margin: 0;
+     	font-size: 16px;
+     	font-family: "lato",sans-serif;
+     	font-weight: 400;
+     	line-height: 1.8em;
+     	color: #666;
+     }
+     .img1,.img2,.img3{
+        position: relative;
+        opacity: 0.70;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+     }
+     .img1{
+     	background-image: url(https://cdn1.matadornetwork.com/blogs/1/2018/02/Side-view-of-the-Taj-Mahal.jpg);
+     	min-height: 100%;
+
+
+     }
+     .img2{
+     	background-image: url(https://www.holidify.com/images/bgImages/LADAKH.jpg);
+     	min-height: 400px;
+     	
+     	
+     }
+     .img3{
+     	background-image: url(https://cdn.dpauls.com/public/images/packages/india/manali/kullu-manali-himachal-india.jpg);
+     	min-height: 400px;
+     	
+     }
+     .section{
+     	text-align: center;
+     	padding: 50px 30px;
+     }
+     .section-light{
+     	background-color: #F4F4F4;
+     	color: #666;
+     }
+     .section-dark{
+     	background-color: #282E34;
+     	color: #DDD;
+     }
+     .text{
+     	position: absolute;
+     	top: 50%;
+     	width: 100%;
+     	text-align: center;
+     	color: #000;
+     	font-size: 27px;
+     	letter-spacing: 8px;
+     	text-transform: uppercase;
+     }
+     .text .border{
+     	background-color: #111;
+     	color: #fff;
+     	padding: 20px;
+
+     }
+     .text .border.paral{
+     	background-color: transparent;
+     }
+
+     @media(max-width: 568px){
+     	.img1,.img2,.img3{
+        background-attachment: scroll;
+     }
+ </style>
+</head>
+<body>
+    <div class="img1">
+    	<div class="text">
+    		<span class="border">
+    			Top 3 Tourist place in India
+    		</span>
+    	</div>	
+    </div>	
+    <section class="section section-light">
+    	<h2>Agra</h2>
+    	<p>Agra is home to several historic monuments, making it one of the most visited places in India. Of course, top of this list of places to see in Agra is the Taj Mahal, one of the most famous buildings in the world.
+
+This beautiful building, finished in white marble, is a perfect example of Mughal architecture, as are the Agra Fort, Akbar’s Tomb and Fatehpur Sikri. Also a great place to gorge on wonderful Mughlai food.</p>
+    </section>
+    	<div class="img2">
+    	<div class="text">
+    		<span class="border paral">
+    			Ladakh
+    		</span>
+    	</div>	
+    </div>
+     <section class="section section-dark">
+    	<h2>Ladakh</h2>
+    	<p>Ladakh is a region administered by India as a union territory, and constitutes a part of the larger Kashmir region, which has been the subject of dispute between India, Pakistan, and China since 1947. Ladakh is bordered by the Tibet Autonomous Region to the east, the Indian state of Himachal Pradesh to the south, both the Indian-administered union territory of Jammu and Kashmir and the Pakistan-administered Gilgit-Baltistan to the west, and the southwest corner of Xinjiang across the Karakoram Pass in the far north.</p>		
+    </section>
+        <div class="img3">
+    	<div class="text">
+    		<span class="border paral">
+    			Manali
+    		</span>
+    	</div>	
+    </div>
+     <section class="section section-dark">
+    	<h2>Manali</h2>
+    	<p>Manali is the real starting point of an ancient trade route which crosses the Rohtang and Baralacha passes, and runs via Lahul and Ladakh to Kashmir while divergent road connects it with Spiti. Now the motor link have been provided up to Leh in Jammu & Kashmir, Pangi valley in Chamba and Kaza of Lahul & Spiti. There are regular bus services to these places from Manali during summer season. It is situated at a distance of 45 kms from Kullu.
+
+There is an interesting legend about Manali which goes to say that Manu, the author of ’Manu Samhita’, after the great deluge first stepped on the earth from the celestial boat at a place in this land.</p>		
+    </section>
+</body>
+</html>
